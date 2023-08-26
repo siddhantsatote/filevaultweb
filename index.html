@@ -27,10 +27,11 @@
 			rel="stylesheet"
 			href="https://www.unpkg.com/shery-js@1.0.0-alpha.0.5/dist/Shery.css"
 		/>
-		<link rel="stylesheet" href="./filevaultweb/src/styles/feature.css" />
-		<link rel="stylesheet" href="./filevaultweb/src/styles/preloader.css" />
+		<link rel="stylesheet" href="./src/styles/feature.css" />
+		<link rel="stylesheet" href="./src/styles/preloader.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="./filevaultweb/src/styles/style.css" />
+		<link rel="stylesheet" href="./src/styles/style.css" />
+		<link rel="stylesheet" href="./src/styles/about.css" />
 	</head>
 	<body>
 		<!-- Preloader Section -->
@@ -76,16 +77,16 @@
 			<!-- header section -->
 			<div class="nav">
 				<div class="logo">
-					<img src="./filevaultweb/assets/img/logo.png" alt="" />
+					<img class="magnet" src="./assets/img/logo.png" alt="" />
 				</div>
 				<div class="nav-items">
 					<a href="#feature">Features</a>
-					<a href="#">Design</a>
+					<a href="#" class="hvr">Design</a>
 					<i class="ri-menu-line magnet"></i>
 				</div>
 			</div>
 			<div id="homelast">
-				<p id="typing-text"></p>
+				<p id="typing-text" class="hvr"></p>
 			</div>
 		</div>
 		<div id="featured">
@@ -138,10 +139,27 @@
 					</div>
 				</div>
 			</div>
-			<div class="btndiv">
-				<button class="magnet">view all products</button>
-			</div>
 		</div>
+		<!-- <div class="about">
+			<div class="screen">
+				<div class="screen-image"></div>
+				<div class="screen-overlay"></div>
+				<div class="screen-content">
+					<i class="screen-icon fa-brands fa-codepen"></i>
+					<div class="screen-user">
+						<span class="name" data-value="CODEPEN">CODEPEN</span>
+						<a
+							class="link"
+							href="https://youtube.com/@Hyperplexed"
+							target="_blank"
+							>@Hyperplexed</a
+						>
+					</div>
+				</div>
+			</div>
+			<!-- </div> -->
+		<div id="blob"></div>
+		<div id="blur"></div>
 
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
@@ -155,10 +173,18 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		></script>
-
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"
+			integrity="sha512-auFmPm+de880vk/c+bgBmuOnQ7BM28z7zPWmepVgX8737t75OHZjElOnQqERwP8cE4DIyCJ+gb1kE0b/eLWcnA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+		<script src="https://www.unpkg.com/shery-js@1.0.0-alpha.0.5/dist/Shery.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-		<script src="./filevaultweb/src/scripts/preloader.js"></script>
-		<script src="./filevaultweb/src/scripts/feature.js"></script>
-		<script src="./filevaultweb/src/scripts/script.js" async defer></script>
+		<script src="./src/scripts/script.js" async defer></script>
+		<script src="./src/scripts/preloader.js"></script>
+		<script src="./src/scripts/feature.js"></script>
+		<script src="./src/scripts/about.js"></script>
 	</body>
 </html>
