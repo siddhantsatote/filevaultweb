@@ -75,6 +75,8 @@ body {
 	height: 100vh;
 	overflow: hidden;
 	z-index: 1;
+	/* font-family: "Space Mono", monospace; */
+
 	font-family: "Nenu Montreal";
 	text-transform: uppercase;
 	display: flex;

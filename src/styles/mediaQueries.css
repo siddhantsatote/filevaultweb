@@ -18,6 +18,7 @@
 
 	/* Style the paragraph for better readability on smaller screens */
 	#homelast p {
+		text-align: center;
 		font-size: 16px; /* Adjust font size */
 		line-height: 1.4; /* Increase line height for better readability */
 		margin: 20px 0; /* Add margin to top and bottom of the paragraph */
@@ -59,6 +60,8 @@
 		bottom: 0%;
 	}
 	#homelast p {
+		text-align: center;
+
 		font-size: 14px;
 		line-height: 1.4;
 		margin: 20px 0;

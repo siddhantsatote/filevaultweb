@@ -52,7 +52,7 @@ function typeText() {
 		typingText.textContent += textToType.charAt(index);
 		index++;
 	} else {
-		clearInterval(typingInterval);
+		// clearInterval(typingInterval);
 	}
 }
 

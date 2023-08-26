@@ -1,11 +1,19 @@
-// import preloader from "./preloader.js";
-// preloader.load;
-// window.addEventListener("load", function () {
-// 	// Hide the preloader
-// 	const preloader = document.getElementById("preloader");
-// 	preloader.style.display = "none";
+// Initialize GSAP and ScrollTrigger
+gsap.registerPlugin(ScrollTrigger);
 
-// 	// Display the main content
-// 	const mainContent = document.getElementById("main-content");
-// 	mainContent.style.display = "block";
-// });
+const backgroundTimeline = gsap.timeline();
+
+backgroundTimeline.to("#featured", {
+	backgroundColor: "black",
+	duration: 0.3,
+	ease: "power1.inOut",
+});
+
+ScrollTrigger.create({
+	trigger: "#featured",
+	markers: true,
+	start: "-15% top",
+	end: "35% center",
+	animation: backgroundTimeline,
+	scrub: 4,
+});
