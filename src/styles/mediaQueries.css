@@ -1,0 +1,67 @@
+@media (max-width: 909px), screen and (orientation: portrait) {
+	/* Adjust styles for smaller screens */
+	.nav {
+		align-items: center;
+	}
+
+	.nav .logo img {
+		width: 50%; /* Adjust the logo width as needed */
+	}
+
+	.nav-items {
+		margin-top: 20px; /* Add spacing between navigation items */
+	}
+
+	#homelast {
+		bottom: 3%;
+	}
+
+	/* Style the paragraph for better readability on smaller screens */
+	#homelast p {
+		font-size: 16px; /* Adjust font size */
+		line-height: 1.4; /* Increase line height for better readability */
+		margin: 20px 0; /* Add margin to top and bottom of the paragraph */
+		padding: 0 15px; /* Add padding to the sides of the paragraph */
+	}
+
+	/* Add a smooth transition to the paragraph */
+	#homelast p {
+		transition: font-size 0.3s ease, line-height 0.3s ease;
+	}
+
+	/* Style the navigation links for smaller screens */
+	.nav-items a {
+		padding: 10px 20px; /* Increase padding for touch-friendly buttons */
+		font-size: 14px; /* Adjust font size */
+	}
+}
+/* Styles for larger screens (e.g., tablets and desktops) */
+/* Add your existing styles for larger screens here */
+
+@media only screen and (max-width: 480px) {
+	body {
+		font-size: 16px;
+	}
+
+	.nav {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.nav .logo img {
+		width: 50%; /* Adjust the logo size for mobile */
+	}
+
+	.nav-items {
+		margin-top: 20px; /* Add spacing between navigation items on mobile */
+	}
+	#homelast {
+		bottom: 0%;
+	}
+	#homelast p {
+		font-size: 14px;
+		line-height: 1.4;
+		margin: 20px 0;
+		padding: 0 15px;
+	}
+}
