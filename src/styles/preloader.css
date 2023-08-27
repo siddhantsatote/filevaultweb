@@ -75,6 +75,8 @@ body {
 	height: 100vh;
 	overflow: hidden;
 	z-index: 1;
+	/* font-family: "Space Mono", monospace; */
+
 	font-family: "Nenu Montreal";
 	text-transform: uppercase;
 	display: flex;
@@ -130,7 +132,7 @@ body {
 	transition: opacity 0.5s, transform 0.5s;
 	text-align: justify;
 	font-weight: 500 !important;
-	font-size: 25px !important;
+	font-size: 20px !important;
 	color: #000000 !important; /* Text color */
 	font-size: 18px;
 	opacity: 1;
