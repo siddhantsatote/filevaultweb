@@ -1,3 +1,9 @@
+// let crsr = document.querySelector(".cursor");
+// document.addEventListener("mousemove", function (dets) {
+// 	crsr.style.left = dets.x - 150 + "px";
+// 	crsr.style.top = dets.y - 150 + "px";
+// });
+
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let intervalH1 = null; // Separate interval for .featuredH1
 let intervalH2 = null; // Separate interval for .featuredH2

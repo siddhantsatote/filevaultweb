@@ -63,5 +63,16 @@ function typeText() {
 setTimeout(() => {
 	typingText.classList.add("show");
 	const typingInterval = setInterval(typeText, interval);
-	// typingText.style.opacity = 1; // Make the text visible
-}, typingDelay); // Adjust the delay as needed
+}, typingDelay);
+document.addEventListener("DOMContentLoaded", function () {
+	setTimeout(function () {
+		var fadeDiv = document.querySelector(".img-2");
+		fadeDiv.style.opacity = 1;
+	}, 6000);
+});
+document.addEventListener("DOMContentLoaded", function () {
+	setTimeout(function () {
+		var fadeDiv = document.querySelector(".img-3");
+		fadeDiv.style.opacity = 1;
+	}, 6000);
+});
