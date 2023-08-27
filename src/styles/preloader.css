@@ -124,13 +124,13 @@ body {
 }
 #homelast {
 	position: absolute;
-	bottom: 10%;
+	bottom: 20%;
 	left: 50%;
 	text-transform: none;
 
 	transform: translateX(-50%);
 	transition: opacity 0.5s, transform 0.5s;
-	text-align: justify;
+	text-align: center;
 	font-weight: 500 !important;
 	font-size: 20px !important;
 	color: #000000 !important; /* Text color */
@@ -140,4 +140,28 @@ body {
 .loader-paragraph.show {
 	opacity: 1;
 	transform: translateY(0);
+}
+.img-1 {
+	position: absolute;
+	top: 11%;
+	left: 50%;
+	width: 10%;
+	transform: translate(-50%, -50%);
+}
+.img-2 {
+	position: absolute;
+	bottom: 30%;
+	right: 5%;
+	transform: rotate(347deg) translate(-50%, -50%);
+	opacity: 0;
+	transition: opacity 2s ease-in-out;
+}
+.img-3 {
+	position: absolute;
+	bottom: 20%;
+	left: 10%;
+
+	opacity: 0;
+	transition: opacity 2s ease-in-out;
+	transform: rotate(347deg) translate(-50%, -50%);
 }

@@ -1,47 +1,47 @@
-/* -- Glow effect -- */
+document.querySelectorAll(".elem").forEach(function (elem) {
+	var rotate = 0;
+	var diffrot = 0;
 
-const blob = document.getElementById("blob");
+	elem.addEventListener("mouseleave", function (dets) {
+		gsap.to(elem.querySelector("img"), {
+			opacity: 0,
+			ease: Power3,
+			duration: 0.5,
+		});
+	});
 
-window.onpointermove = (event) => {
-	const { clientX, clientY } = event;
+	elem.addEventListener("mousemove", function (dets) {
+		var diff = dets.clientY - elem.getBoundingClientRect().top;
+		diffrot = dets.clientX - rotate;
+		rotate = dets.clientX;
+		gsap.to(elem.querySelector("img"), {
+			opacity: 1,
+			ease: Power3,
+			top: diff,
+			left: dets.clientX,
+			rotate: gsap.utils.clamp(-20, 20, diffrot * 0.5),
+		});
+	});
+});
+// text effect
+let index1 = 0,
+	interval1 = 1000;
 
-	blob.animate(
-		{
-			left: `${clientX}px`,
-			top: `${clientY}px`,
-		},
-		{ duration: 3000, fill: "forwards" }
-	);
+const rand = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+
+const animate = (star) => {
+	star.style.setProperty("--star-left", `${rand(-10, 100)}%`);
+	star.style.setProperty("--star-top", `${rand(-40, 80)}%`);
+
+	star.style.animation = "none";
+	star.offsetHeight;
+	star.style.animation = "";
 };
 
-/* -- Text effect -- */
+for (const star of document.getElementsByClassName("magic-star")) {
+	setTimeout(() => {
+		animate(star);
 
-let interval3 = null;
-
-const screen = document.querySelector(".screen"),
-	name = document.querySelector(".name");
-
-screen.onmouseenter = (event) => {
-	let iteration = 0;
-
-	clearInterval(interval3);
-
-	interval = setInterval(() => {
-		name.innerText = name.innerText
-			.split("")
-			.map((letter, index) => {
-				if (index < iteration) {
-					return name.dataset.value[index];
-				}
-
-				return letters[Math.floor(Math.random() * 26)];
-			})
-			.join("");
-
-		if (iteration >= name.dataset.value.length) {
-			clearInterval(interval);
-		}
-
-		iteration += 1 / 3;
-	}, 30);
-};
+		setInterval(() => animate(star), 1000);
+	}, index++ * (interval / 3));
+}

@@ -49,8 +49,8 @@ backgroundTimeline.to("#featured", {
 ScrollTrigger.create({
 	trigger: "#featured",
 	// markers: true,
-	start: "-15% top",
-	end: "35% center",
+	start: "-10% top",
+	end: "15% center",
 	animation: backgroundTimeline,
 	scrub: 4,
 });
