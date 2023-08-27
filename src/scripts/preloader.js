@@ -42,7 +42,7 @@ gsap.to(
 //** Get the paragraph element
 const typingText = document.getElementById("typing-text");
 const textToType =
-	" FileVault is a user-controlled file management system designed to provide a secure and seamless experience for uploading, storing, and downloading files. This project prioritizes user security and privacy, offering a platform where users have full control over their files.";
+	"FileVault is a user-controlled file management system designed to provide a secure and seamless experience for uploading, storing, and downloading files. This project prioritizes user security and privacy, offering a platform where users have full control over their files.";
 
 let index = 0;
 const interval = 50;

@@ -94,8 +94,12 @@ body {
 	justify-content: space-between;
 	text-align: center;
 	text-decoration: none;
-	padding: 2em 4em;
+	padding: 2em 6em;
 }
+.nav-items {
+	margin-right: 3%;
+}
+
 .nav-item a {
 	text-decoration: none;
 	color: #000;
@@ -124,13 +128,12 @@ body {
 }
 #homelast {
 	position: absolute;
-	bottom: 20%;
+	bottom: 10%;
 	left: 50%;
 	text-transform: none;
-
+	text-align: justify;
 	transform: translateX(-50%);
 	transition: opacity 0.5s, transform 0.5s;
-	text-align: center;
 	font-weight: 500 !important;
 	font-size: 20px !important;
 	color: #000000 !important; /* Text color */
@@ -144,7 +147,7 @@ body {
 .img-1 {
 	position: absolute;
 	top: 11%;
-	left: 50%;
+	left: 48%;
 	width: 10%;
 	transform: translate(-50%, -50%);
 }
