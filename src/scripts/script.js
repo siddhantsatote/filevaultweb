@@ -1,3 +1,4 @@
+// add the shery mouse follower
 Shery.mouseFollower();
 Shery.makeMagnet(".magnet");
 Shery.hoverWithMediaCircle(".hvr", {
